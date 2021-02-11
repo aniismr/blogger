@@ -170,7 +170,7 @@ function makeSlider(a) {
         url: "http://www.radioun.com",
         numPost: 5,
         newTabLink: false,
-        labelName: null,
+        labelName: "Radios%20Tunisiennes",
         showDetail: true,
         summaryLength: 60,
         titleLength: "auto",
