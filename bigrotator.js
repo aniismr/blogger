@@ -222,7 +222,12 @@ function makeSlider(a) {
                     height: (!c.showDetail && c.squareThumb) ? c.thumbWidth + "px" : $("#" + c.containerId).css("height")
                 })
             }
+            d = '<div class="slider-rotator-nav"' + (c.showNav === false ? ' style="display:none;"' : "") + ">";
+            d += (c.showNav === true || c.showNav == "next/prev") ? '<span class="rotator-advancer"><a href="#prev">' + c.navText.prev + "</a></span>" : "";
 
+            d += (c.showNav === true || c.showNav == "next/prev") ? '<span class="rotator-advancer"><a href="#next">' + c.navText.next + "</a></span>" : "";
+            d += "</div>";
+            $("#" + c.containerId).html(h).after(d);
             c.onInit();
             $("#" + c.containerId).removeClass("loading").customRotator({
                 interval: c.interval,
