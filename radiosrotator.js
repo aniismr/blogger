@@ -3,7 +3,7 @@
 (function(a) {
     a.fn.customRotator = function(c) {
         c = a.extend({
-            interval: 6000,
+            interval: 3500,
             speed: 1000,
             hoverPause: true,
             autoHeight: false,
@@ -168,7 +168,7 @@
 function makeSlider(a) {
     var c = {
         url: "http://www.radioun.com",
-        numPost: 5,
+        numPost: 100,
         newTabLink: false,
         labelName: "Radios%20Tunisiennes",
         showDetail: true,
@@ -184,7 +184,7 @@ function makeSlider(a) {
             next: "&gt;"
         },
         containerId: "slider-rotator",
-        interval: 6000,
+        interval: 3500,
         speed: 1000,
         hoverPause: true,
         crossFade: false,
