@@ -183,7 +183,7 @@ function makeSlider(a) {
             prev: "&lt;",
             next: "&gt;"
         },
-        containerId: "slider-rotator",
+        containerId: "banner-rotator",
         interval: 3500,
         speed: 1000,
         hoverPause: true,
@@ -213,7 +213,7 @@ function makeSlider(a) {
                 for (var l = 0, f = r[m].link.length; l < f; l++) {
                     p = (r[m].link[l].rel == "alternate") ? r[m].link[l].href : "#"
                 }
-                h += '<marquee behavior="scroll" direction="left"><div class="slider-item">';
+                h += '<marquee behavior="scroll" direction="left"><div class="banner-item">';
                 h += (c.showThumb && c.showDetail) ? '<div class="image-wrapper">' + e + "</div>" : (c.showThumb && !c.showDetail) ? '<div class="image-wrapper"><a href="' + p + '" title="' + q + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + e + "</a></div>" : "";
                 h += (c.showDetail) ? '<div class="detail-wrapper"><h4><a title="' + q + '" href="' + p + '"' + (c.newTabLink ? ' target="_blank"' : "") + ">" + ((c.titleLength == "auto") ? q : q.substring(0, c.titleLength) + (q.length > c.titleLength ? "&hellip;" : "")) + "</a></h4><p>" + o + "</p></div>" : "";
                 h += "</div>  </marquee>";
@@ -222,7 +222,7 @@ function makeSlider(a) {
                     height: (!c.showDetail && c.squareThumb) ? c.thumbWidth + "px" : $("#" + c.containerId).css("height")
                 })
             }
-            d = '<div class="slider-rotator-nav"' + (c.showNav === false ? ' style="display:none;"' : "") + ">";
+            d = '<div class="banner-rotator-nav"' + (c.showNav === false ? ' style="display:none;"' : "") + ">";
             d += (c.showNav === true || c.showNav == "next/prev") ? '<span class="rotator-advancer"><a href="#prev">' + c.navText.prev + "</a></span>" : "";
 
             d += (c.showNav === true || c.showNav == "next/prev") ? '<span class="rotator-advancer"><a href="#next">' + c.navText.next + "</a></span>" : "";
